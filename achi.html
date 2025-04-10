@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #6b4f30;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            background-color: #6b4f30;
+            padding: 60px 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+
+        .achievements-box {
+            flex: 1;
+            text-align: center;
+            border: 4px solid #d4af37;
+            border-radius: 12px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.15);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .achievements-box:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            color: #d4af37;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .image-box img {
+            width: 300px;
+            height: auto;
+            border: 4px solid #d4af37;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .image-box img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(255, 223, 0, 0.3);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="navbar">
+        
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="achi.html">Achievements</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+    
+    <section class="main-content">
+        <div class="achievements-box">
+            <h2>School Achievements</h2>
+            <ul>
+                <li>With Honors (Grade 11)</li>
+                <li>With Honors (Grade 12)</li>
+                <li>Graduated SHS with honors</li>
+                <li>School Intramurals (2x Champion)</li>
+            </ul>
+        </div>
+
+        <div class="image-box">
+            <img src="https://i.pinimg.com/474x/1b/25/16/1b2516d651b9e9196acbbc521128b495.jpg" alt="Basketball Player">
+        </div>
+
+        <div class="achievements-box">
+            <h2>Sports Achievements</h2>
+            <ul>
+                <li>Inter Barangay 2017 Champion</li>
+                <li>Inter Barangay 2017 Mythical Five</li>
+                <li>Inter Color MVP</li>
+                <li>ISBVL 1st Runner</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="footer">
+        WELCOME TO MY PORTFOLIO
+    </div>
+
+</body>
+</html>

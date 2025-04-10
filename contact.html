@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #6b4f30;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #6b4f30;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 1000px;
+            animation: floating 3s infinite ease-in-out;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        .contact-image {
+            flex: 1 1 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .contact-image img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 50%;
+            border: 5px solid #FFFDD0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.4s ease;
+        }
+
+        .contact-image img:hover {
+            transform: scale(1.1);
+        }
+
+        .contact-details {
+            flex: 1 1 400px;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.3);
+            border-left: 4px solid #FFFDD0;
+        }
+
+        .contact-details h2 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #FFFDD0;
+            padding-bottom: 5px;
+        }
+
+        .contact-details span {
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        .contact-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-details li {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+            }
+            .contact-details {
+                border-left: none;
+                border-top: 4px solid #FFFDD0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="achi.html">Achievements</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-image">
+            <img src="https://i.pinimg.com/474x/26/1b/63/261b630a3142a4a8f406498a9e2378da.jpg" alt="Contact Photo">
+        </div>
+        <div class="contact-details">
+            <h2>Contact No: <span>09260615714</span></h2>
+            <h2>Email Address: <span>avpanginiban8609qc@student.fatima.edu.ph</span></h2>
+            <h2>Address: <span>Caloocan City</span></h2>
+            <h2>Social Media:</h2>
+            <ul>
+                <li>Facebook: AJ_Pangani</li>
+                <li>Instagram: Geloowwss</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        WELCOME TO MY PORTFOLIO
+    </div>
+
+    
+</body>
+</html>
